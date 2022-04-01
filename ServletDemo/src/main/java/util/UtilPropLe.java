@@ -11,16 +11,16 @@ public class UtilPropLe {
    static String _PROP_FILENAME_WIN_LOCAL = "C:\\Users\\khanh\\git\\TodoList_Project\\ServletDemo\\src\\main\\webapp\\config.properties";
    static String _PROP_FILENAME_OSX_LOCAL = "/Users/khanhlee/4830/workspace4830/workspaceCSCI-4830-ex-0211-Le/webproject-ex-0211-Le/src/main/webapp/config.properties";
    // * Remote server path
-   static String _PROP_FILENAME_REMOTE = "/var/lib/tomcat7/webapps/webproject-ex-0214-Le/config.properties";
+   static String _PROP_FILENAME_REMOTE = "/var/lib/tomcat7/webapps/ServletDemo/config.properties";
    static Properties prop = new Properties();
 
    public static void loadProperty() throws Exception {
-	   System.out.println("inside UtilProp.loadProperty()");
+	   //System.out.println("inside UtilProp.loadProperty()");
       FileInputStream inputStream = null;
       if (_W) {
          if (new File(_PROP_FILENAME_WIN_LOCAL).exists()) {
-        	System.out.println("inside prop_filename_remote win_local");
-            System.out.println("[DBG] Loaded: " + new File(_PROP_FILENAME_WIN_LOCAL).getAbsolutePath());
+        	//System.out.println("inside prop_filename_remote win_local");
+            //System.out.println("[DBG] Loaded: " + new File(_PROP_FILENAME_WIN_LOCAL).getAbsolutePath());
             inputStream = new FileInputStream(_PROP_FILENAME_WIN_LOCAL);
          }
       } else {

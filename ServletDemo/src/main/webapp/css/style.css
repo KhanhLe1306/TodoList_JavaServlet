@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: rgb(10, 56, 54);
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+header{
+	margin-top: 4rem;
+	margin-bottom: 5rem;
+}
+
+header > h1{
+	font-size: 2rem;
+	font-weight: bold;
+	text-align:center;
+}
+
+.app__container{
+	padding: 1rem 2rem;
+	width: 55%;
+	min-height: 50%;
+	max-width: 555px;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+	display: flex;
+	flex-direction: column;
+	border-radius: 1rem;
+}
+
+.button__container{
+	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+.button{
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: .75rem;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.button:hover, .link:hover{
+	background: linear-gradient(to right bottom, rgba(255,255,12,1), rgba(255,4,255,0.8));
+}
+
+.link:hover
+{
+	padding: .4rem .75rem;
+}
+.button:hover{
+	padding: 1.5rem 3rem;
+}
+
+.todo__title{
+	display: inline-block;
+}
+
+li{
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem;
+	border: .5px solid rgba(18, 74, 71, .5);
+	border-radius: .5rem;
+	transition: .3s ease;
+	cursor: pointer;
+}
+
+li:hover{
+	padding: 1rem;
+	background: linear-gradient(to right bottom, rgba(18, 74, 71,0.6), rgba(18, 74, 71,0.2));
+}
+
+.todo__title{
+	text-align: center;
+}
+
+.link{
+	text-decoration: none;	
+	color: black;
+	padding: .25rem .5rem;
+	border-radius: .5rem;
+	cursor: pointer;
+	background-color: white;
+	transition: .3s ease;
+}
+
+/* ----------------FORM style---------------------- */
+
+.add__form-container{
+	padding: 1rem 2rem;
+	width: 55%;
+	height: 200px;
+	max-width: 555px;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+	display: flex;
+	flex-direction: column;
+	border-radius: 1rem;
+	position: relative;
+	top: 35%;
+}
+
+.add__form-title{
+	text-align: center;
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+}
+
+.add__form{
+	display: flex;
+	gap: 5px;
+}
+
+.add__form > input{
+	flex: 80%;
+}
+
+.add__input{
+	border: none;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+
+.add__button{
+	flex: 20%;
+	border: none;
+	color: rgb(10, 56, 54);
+}
+
+
+/* --------------------Welcome link--------------  */
+
